@@ -1,0 +1,217 @@
+.content-block--with-button {
+
+}
+
+.feature--with-padding {
+    padding: 0 1.4rem;
+}
+
+
+.content-with-sidebar {
+
+}
+
+.content-with-sidebar__wrapper {
+
+}
+
+.content-with-sidebar__content {
+
+}
+
+.content-with-sidebar__sidebar {
+
+}
+
+/* highlight text section */
+
+.highlight-quote {
+    padding-inline: 2rem !important;
+}
+
+.highlight-quote__body {
+    text-align: center !important;
+    margin: 0 auto !important;
+}
+
+/* double-image feature section */
+
+.plain-feature {
+
+}
+
+/* this image is in the left side, with X styling */
+
+.plain-feature__media {
+
+}
+
+.plain-feature__image {
+
+}
+
+.plain-feature__media--with-content {
+
+}
+
+.plain-feature__title {
+
+}
+
+.plain-feature__content-block {
+
+}
+
+.plain-feature__media--reversed {
+
+}
+
+.plain-feature__body {
+
+}
+
+.plain-feature__button {
+
+}
+
+
+/* double-image section with an extra background frame */
+
+.single-framed-feature {
+
+}
+
+.single-framed-feature__media-container {
+    
+}
+
+.single-framed-feature__base-media {
+
+}
+
+.single-framed-feature__image--background {
+    
+}
+
+.single-framed-feature__lvl1-frame {
+
+}
+
+.single-framed-feature__lvl2-frame {
+    
+}
+
+.single-framed-feature__image--framed {
+
+}
+
+.single-framed-feature__title {
+
+}
+
+.single-framed-feature__content-block {
+
+}
+
+.single-framed-feature__body {
+
+}
+
+.single-framed-feature__button {
+
+}
+
+/* double-image section with both images in frames */
+
+.double-framed-feature {
+
+}
+
+.double-framed-feature__container-left {
+    
+}
+
+.double-framed-feature__container-right {
+    
+}
+
+.double-framed-feature__content-block {
+    
+}
+
+.double-framed-feature__title {
+    
+}
+
+.double-framed-feature__body {
+    
+}
+
+.double-framed-feature__button {
+    
+}
+
+/* reverse feature (not the same style as plain feature) */
+
+.reverse-feature {
+
+}
+
+.reverse-feature__content-block {
+
+}
+
+.reverse-feature__title {
+
+}
+
+.reverse-feature__body {
+
+}
+
+.reverse-feature__button {
+
+}
+
+.reverse-feature__media--center {
+
+}
+
+.reverse-feature__media--side {
+    
+}
+
+.reverse-feature__image--center {
+
+}
+
+.reverse-feature__image--side {
+    
+}
+
+/* tablet sizing */
+
+@media (min-width: 768px) {
+    .highlight-quote {
+    
+    }
+    
+    .highlight-quote__body {
+        text-indent: 8rem !important;
+        text-align: left !important;
+    }
+}
+
+/* desktop sizing */ 
+@media (min-width: 1180px) {
+    .highlight-quote {
+        
+    }
+    
+    .highlight-quote__body {
+        text-indent: 10rem !important;
+        font-size: 1.25rem !important;
+        line-height: 1.5em !important;
+        padding: 2em 4em !important;
+    }
+}
