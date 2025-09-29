@@ -6,17 +6,12 @@
     padding: 0 1.4rem;
 }
 
-
 .content-with-sidebar {
 
 }
 
-.content-with-sidebar__wrapper {
-
-}
-
 .content-with-sidebar__content {
-
+    row-gap: 0;
 }
 
 .content-with-sidebar__sidebar {
@@ -40,7 +35,7 @@
 
 }
 
-/* this image is in the left side, with X styling */
+/* this image is in the left side on desktop */
 
 .plain-feature__media {
 
@@ -49,12 +44,9 @@
 .plain-feature__image {
 
 }
+/* this image and content is on the right side on desktop */
 
 .plain-feature__media--with-content {
-
-}
-
-.plain-feature__title {
 
 }
 
@@ -65,6 +57,11 @@
 .plain-feature__media--reversed {
 
 }
+
+.plain-feature__title {
+
+}
+
 
 .plain-feature__body {
 
