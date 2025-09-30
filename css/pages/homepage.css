@@ -1,4 +1,12 @@
-.content-block--with-button {
+.section__heading {
+
+}
+
+.section__body {
+    
+}
+
+.content-block {
 
 }
 
@@ -50,11 +58,11 @@
 
 }
 
-.plain-feature__content-block {
+.plain-feature__media--reversed {
 
 }
 
-.plain-feature__media--reversed {
+.plain-feature__content-container {
 
 }
 
@@ -62,6 +70,9 @@
 
 }
 
+.plain-feature_content-block {
+
+}
 
 .plain-feature__body {
 
