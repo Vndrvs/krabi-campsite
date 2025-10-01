@@ -40,30 +40,47 @@
 /* double-image feature section */
 
 .plain-feature {
-
+    padding: 0 1.4rem;
+    row-gap: 2rem;
+    flex-direction: row !important;
 }
 
 /* this image is in the left side on desktop */
 
-.plain-feature__media {
-
-}
-
 .plain-feature__image {
-
+    height: 13rem;
+    max-width: 90% !important;
+    overflow: hidden;
 }
+
+.plain-feature__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /* this image and content is on the right side on desktop */
 
 .plain-feature__media--with-content {
-
+    row-gap: 1.4rem;
 }
 
-.plain-feature__media--reversed {
+.plain-feature__image--reversed {
+    align-self: flex-end;
+    height: 13rem;
+    max-width: 90% !important;
+    overflow: hidden;
+}
 
+.plain-feature__image--reversed img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
 }
 
 .plain-feature__content-container {
-
+    row-gap: 1rem;
 }
 
 .plain-feature__title {
