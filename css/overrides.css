@@ -1,0 +1,9 @@
+.entry-title {
+    display: none !important;
+}
+
+.e-con-inner {
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: none !important;
+}
