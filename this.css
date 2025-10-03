@@ -1,52 +1,7 @@
-.section__heading {
-
-}
-
-.section__body {
-    
-}
-
-.content-block {
-
-}
-
-.feature--with-padding {
-    padding: 0 1.4rem;
-}
-
-.content-with-sidebar {
-
-}
-
-.content-with-sidebar__content {
-    row-gap: 0;
-}
-
-.content-with-sidebar__sidebar {
-
-}
-
-/* highlight text section */
-
-.highlight-quote {
-    padding-inline: 2rem !important;
-    max-width: 80rem !important;
-}
-
-.highlight-quote__body {
-    text-align: center !important;
-    margin: 0 auto !important;
-}
-
-/* double-image feature section */
-
 .plain-feature {
     padding: 0 1.4rem;
     row-gap: 2rem;
-    flex-direction: row !important;
 }
-
-/* this image is in the left side on desktop */
 
 .plain-feature__image {
     height: 13rem;
@@ -55,12 +10,11 @@
 }
 
 .plain-feature__image img {
+    max-width: 23rem;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
-/* this image and content is on the right side on desktop */
 
 .plain-feature__media--with-content {
     row-gap: 1.4rem;
@@ -84,157 +38,10 @@
     row-gap: 1rem;
 }
 
-.plain-feature__title {
-
-}
-
-.plain-feature_content-block {
-
-}
-
-.plain-feature__body {
-
-}
-
-.plain-feature__button {
-
-}
-
-
-/* double-image section with an extra background frame */
-
-.single-framed-feature {
-
-}
-
-.single-framed-feature__media-container {
-    
-}
-
-.single-framed-feature__image--background {
-    
-}
-
-.single-framed-feature__lvl1-frame {
-
-}
-
-.single-framed-feature__lvl2-frame {
-    
-}
-
-.single-framed-feature__image--framed {
-
-}
-
-.single-framed-feature__title {
-
-}
-
-.single-framed-feature__content-block {
-
-}
-
-.single-framed-feature__body {
-
-}
-
-.single-framed-feature__button {
-
-}
-
-/* double-image section with both images in frames */
-
-.double-framed-feature {
-
-}
-
-.double-framed-feature__container-left {
-    
-}
-
-.double-framed-feature__container-right {
-    
-}
-
-.double-framed-feature__content-block {
-    
-}
-
-.double-framed-feature__title {
-    
-}
-
-.double-framed-feature__body {
-    
-}
-
-.double-framed-feature__button {
-    
-}
-
-/* reverse feature (not the same style as plain feature) */
-
-.reverse-feature {
-
-}
-
-.reverse-feature__content-block {
-
-}
-
-.reverse-feature__title {
-
-}
-
-.reverse-feature__body {
-
-}
-
-.reverse-feature__button {
-
-}
-
-.reverse-feature__media--center {
-
-}
-
-.reverse-feature__media--side {
-    
-}
-
-.reverse-feature__image--center {
-
-}
-
-.reverse-feature__image--side {
-    
-}
-
-@media (max-width: 799px) {
-    .sidebar-container {
-        display: none;
-    }
-}
-
-/* tablet sizing */
-
 @media (min-width: 800px) {
     
-    .highlight-quote__body {
-        text-indent: 8rem !important;
-        text-align: left !important;
-    }
-
-    .plain-feature {
-        padding: 0;
-        column-gap: 4%;
-    }
-
-    .section__heading {
-        margin: 0 !important;
-    }
-
+    /* Sidebar and Content */
+ 
     .content-with-sidebar {
         display: flex !important;
         width: 100% !important;
@@ -247,7 +54,7 @@
         min-width: 0 !important;
         box-sizing: border-box;
     }
-
+    
     .sidebar-container {
         flex: 0 0 var(--sidebar-width) !important;
     }
@@ -256,7 +63,7 @@
         flex: 0 0 auto !important;   
         height: 100vh !important; 
     }
-
+    
     .sidebar-inner {
         display: flex !important;
         flex-wrap: nowrap !important;   
@@ -285,19 +92,21 @@
     .element-is-sticky .menu-item-410 {
         max-height: 50vh !important;
     }
+    
+    /* Plain-feature */
+    
+    .plain-feature {
+        padding: 0;
+        column-gap: 4%;
+    }
 }
 
 @media (min-width: 1180px) {
-    .highlight-quote {
-        width: 100vw !important;
-        margin: 0 auto;
-    }
     
-    .highlight-quote__body {
-        text-indent: 10rem !important;
-        font-size: 1.25rem !important;
-        line-height: 1.5em !important;
-        padding: 2em 4em !important;
+    /* Plain-feature */
+    
+    .plain-feature  {
+        flex-direction: row !important;
     }
 
     .plain-feature__image {
@@ -307,15 +116,12 @@
     }
     
     .plain-feature__image img {
+          max-width: none;
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
-
-    .plain-feature__media--with-content {
-        row-gap: 1.4rem;
-    }
-
+    
     .plain-feature__image--reversed {
         align-self: flex-start;
         height: 60%;
@@ -328,6 +134,10 @@
         height: 100%;
         object-fit: cover;
         object-position: left;
+    }
+    
+    .plain-feature__media--with-content {
+        row-gap: 1.4rem;
     }
     
     .plain-feature__content-container {
