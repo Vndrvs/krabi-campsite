@@ -1,3 +1,12 @@
+.section__heading h2 {
+    line-height: 2.6rem !important;
+    font-size: 1.8rem !important;
+}
+
+.section__heading {
+    margin: 0 !important;
+}
+
 .button {
    text-align: center;
 }
@@ -8,47 +17,16 @@
         border: none;
     width: fit-content;
     border-radius: 12px;
-    text-align: center;
 }
 
 .button--radial .elementor-button {
     padding: 1rem;
 }
 
-
-.button--radial--bordered {
-
+.content-container {
+    padding-left: 10% !important;
 }
 
-.button--bordered {
-
-}
-
-.section-heading {
-
-}
-
-.section__heading h2 {
-    line-height: 2.6rem !important;
-    font-size: 1.8rem !important;
-}
-
-.section-heading--dark {
-
-}
-
-.section-heading--light {
-
-}
-
-.body-text {
-
-}
-
-.image-container {
-
-}
-
-.text-with-button {
-
+.content-block {
+    max-width: 80%;
 }
