@@ -1,15 +1,229 @@
 .benefit-feature {
-
+    align-self: center;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 4rem 12px 4rem 12px;
+    max-width: 900px;
 }
 
-.benefit-feature__title {
-
+#benefit-feature__list-item--wc  {
+    left: -0.2rem;
 }
 
-.benefit-feature__list {
+#benefit-feature__list-item--ac {
+    left: 0.1rem;
+}
+
+#benefit-feature__list-item--desk svg {
+    bottom: 0.2rem;
+}
+
+.benefit-feature__list svg {
+    filter: invert(54%) sepia(53%) saturate(468%) hue-rotate(87deg) brightness(87%) contrast(91%);
+}
+
+/* primary collage */
+
+.primary-collage {
+    padding: 4rem 0 4rem 0 !important;
+}
+
+.primary-collage__content-container {
+    padding-inline: 12px;
+}
+
+.primary-collage__button {
+    align-self: flex-end;
+}
+
+@media (min-width: 800px) {
+    .primary-collage__content-container {
+        max-width: 40vw;
+        left: -8%;
+        align-self: flex-end;
+    }
+}
+
+/* collage */
+
+.primary-collage__grid {
+    position: relative;
+    padding-inline: 24px;
+    width: 100%;
+    max-height: 80vh;
+    aspect-ratio: 4 / 3;
+    height: 40vh;
+}
+
+.primary-collage__grid img {
+    position: absolute;
+    display: block;
+    height: auto;
+    object-fit: cover;
+}
+
+.primary-collage__grid .center {
+    position: absolute;
+    aspect-ratio: 4 / 3;
+    background-color: var(--primary-color);
+    width: 46vw !important;
+    height: 70%;
+    top: 12%;
+    left: 24%;
+    z-index: 1;
+}
     
+.primary-collage__grid .top-left {
+    width: 40vw;
+    height: 60%;
+    top: 0;
+    left: 6%;
+    z-index: 2;
+}
+    
+.primary-collage__grid .bottom-right {
+    width: 40vw;
+    height: 60%;
+    bottom: 0;
+    right: 6%;
+    z-index: 2;
 }
 
-.benefit-feature__list-item {
+@media (min-width: 800px) {
+
+    .primary-collage__grid {
+        width: 76vw;
+        margin: 0 auto;
+        max-width: 1400px;
+    }
     
+    .primary-collage__grid .center {
+      width: 38vw !important;
+      max-height: 38vh;
+      height: auto;
+      top: -8%;
+      left: 10%;
+  }
+    
+    .primary-collage__grid .top-left {
+        width: 32vw !important;
+        max-width: 500px;
+        max-height: 38vh;
+        height: 34vw;
+        top: -24%;
+        left: 0%;
+    }
+    
+    .primary-collage__grid .bottom-right {
+        width: 28vw;
+        max-width: 500px;
+        max-height: 40vh;
+        top: 14%;
+        right: 12%;
+        height: 30vw;
+    }
+}
+
+
+
+/* secondary collage */
+
+.secondary-collage {
+    padding: 0 0 4rem 0 !important;
+}
+
+.secondary-collage__content-container {
+    padding-inline: 12px
+}
+
+.secondary-collage__button {
+    align-self: flex-start;
+}
+
+@media (min-width: 800px) {
+    .secondary-collage__content-container {
+        max-width: 40vw;
+        right: -8%;
+        align-self: flex-start;
+    }
+}
+
+/* collage */
+
+.secondary-collage__grid {
+    position: relative;
+    padding-inline: 24px;
+    width: 100%;
+    max-height: 80vh;
+    aspect-ratio: 4 / 3;
+    height: 40vh;
+}
+
+.secondary-collage__grid img {
+    position: absolute;
+    display: block;
+    height: auto;
+    object-fit: cover;
+}
+
+.secondary-collage__grid .center {
+    position: absolute;
+    aspect-ratio: 4 / 3;
+    background-color: var(--secondary-color);
+    width: 46vw !important;
+    height: 70%;
+    top: 12%;
+    right: 24%;
+    z-index: 1;
+}
+    
+.secondary-collage__grid .top-right {
+    width: 40vw;
+    height: 60%;
+    top: 0;
+    right: 6%;
+    z-index: 2;
+}
+    
+.secondary-collage__grid .bottom-left {
+    width: 40vw;
+    height: 60%;
+    bottom: 0;
+    left: 6%;
+    z-index: 2;
+}
+
+@media (min-width: 800px) {
+
+    .secondary-collage__grid {
+        width: 76vw;
+        margin: 0 auto;
+        max-width: 1400px;
+    }
+    
+    .secondary-collage__grid .center {
+        width: 38vw !important;
+        max-height: 38vh;
+        height: auto;
+        top: -8%;
+        right: 10%;
+      }
+    
+    .secondary-collage__grid .top-right {
+        width: 32vw !important;
+        max-width: 500px;
+        max-height: 38vh;
+        height: 34vw;
+        top: -24%;
+        right: 0%;
+    }
+    
+    .secondary-collage__grid .bottom-left {
+        width: 28vw;
+        max-width: 500px;
+        max-height: 40vh;
+        top: 14%;
+        left: 12%;
+        height: 30vw;
+    }
 }
