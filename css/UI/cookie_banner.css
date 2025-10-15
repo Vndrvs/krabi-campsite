@@ -1,0 +1,16 @@
+.cookie-banner {
+    padding: 0.4rem 2rem;
+}
+
+.cookie-banner__button-container {
+    justify-content: flex-end;
+    width: fit-content;
+}
+
+.cookie-banner__button {
+    white-space: nowrap;
+}
+
+.cookie-banner__button .elementor-button {
+    padding: 1rem 3rem;
+}
