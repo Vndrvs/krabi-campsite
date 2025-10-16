@@ -1,0 +1,250 @@
+#elementor-popup-modal-358 {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 99999 !important;
+}
+
+.dialog-close-button.dialog-lightbox-close-button .eicon-close {
+    display: none;
+}
+
+#elementor-popup-modal-358 .dialog-close-button:before {
+    content: "Close";
+}
+
+#elementor-popup-modal-358 .dialog-close-button:after {
+    content: "\2715";
+}
+
+#elementor-popup-modal-358 .dialog-close-button {
+    top: 2rem;
+    right: 1rem !important;
+    border: 1px solid var(--bg-color-opacity);
+    border-radius: 1.5rem;
+    padding: 0.4rem 0.8rem 0.4rem 1rem;
+    gap: 0.8rem;
+    color: var(--bg-color);
+    font-size: 1.3rem;
+    transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease;
+}
+
+#elementor-popup-modal-358 .dialog-close-button svg {
+    width: 1.4rem;
+}
+
+#elementor-popup-modal-358 .dialog-close-button:hover::before, #elementor-popup-modal-358 .dialog-close-button:hover::after {
+  color: var(--txt-color);
+}
+
+#elementor-popup-modal-358 .dialog-close-button:hover {
+    background-color: var(--bg-color);
+    border-color: var(--txt-color);
+}
+
+.overlay-menu {
+    transition: background 0.3s ease;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0 0;
+}
+
+.overlay-menu__logo-container {
+    width: 100%;
+    border-bottom: 1px solid var(--bg-color-opacity);
+    padding: 0.8rem 0 0.8rem 1rem;
+}
+
+.overlay-menu__logo {
+    width: fit-content;
+}
+
+.elementor-element-800ae01 .elementor-element-82c95be img {
+    width: 4rem !important;
+}
+
+.overlay-menu__content-container {
+    flex-grow: 1 !important;
+    height: 100%;
+    padding: 0 0 0 1rem;
+}
+
+.overlay-menu__contact-container {
+    padding: 0;
+    margin-top: auto;
+    margin-bottom: 2rem;
+}
+
+.overlay-menu__contact-info {
+    font-size: 18px;
+    gap: 0.5rem;
+}
+
+.overlay-menu__list {
+    padding: 1rem 0 1rem 0;
+}
+
+.overlay-menu__nav-container {
+    padding: 0;
+}
+
+.overlay-menu__nav-container .elementor-nav-menu--dropdown{
+    margin: 0;
+}
+
+.overlay-menu__list a:any-link, .overlay-menu__list a:hover, .overlay-menu__list a:focus, .overlay-menu__list a:active {
+    padding: 0;
+}
+
+#elementor-popup-modal-358 .overlay-menu__list .elementor-nav-menu > li > a.elementor-item {
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+.overlay-menu__button a {
+    background-color: transparent !important;
+}
+
+.overlay-menu .button-container-booking {
+    padding: 0;
+}
+
+.overlay-menu__button--booking {
+    background: var(--bg-color);
+    border-radius: 1.5rem;
+    width: fit-content;
+}
+
+.overlay-menu__button--booking .elementor-button {
+    padding: 0.5rem 0.5rem 0.5rem 1.2rem;
+}
+
+.overlay-menu__button--booking .elementor-button-content-wrapper {
+    gap: 0.8rem;
+    align-items: center;
+}
+
+.overlay-menu__button--booking .elementor-button-icon {
+    padding: 0rem;
+    border-radius: 50%;
+    background: var(--txt-color);
+}
+
+.overlay-menu__button--booking .elementor-button-icon svg {
+    width: 2rem;
+    height: 2rem;
+    filter: brightness(0) saturate(100%) invert(98%) sepia(0%) saturate(2093%) hue-rotate(2deg) brightness(116%) contrast(92%);
+}
+
+.overlay-menu__button--contact .elementor-button {
+    padding: 0;
+    font-size: 18px;
+    text-decoration: underline;
+    text-underline-offset: 0.4rem;
+}
+
+.overlay-menu__social-icons {
+    width: fit-content;
+}
+
+.overlay-menu__social-icons .elementor-social-icons-wrapper {
+}
+
+.overlay-menu__social-icons svg {
+    height: 2.5rem;
+    width: auto;
+}
+
+/* Home */
+#elementor-popup-modal-358 .overlay-menu:has(.menu-item-2596:hover) {
+  background-image: url('https://krabi-campsite.com/wp-content/uploads/2025/09/home-overlay-background.webp');
+}
+
+/* Our Domes */
+#elementor-popup-modal-358 .overlay-menu:has(.menu-item-2600:hover) {
+  background-image: url('https://krabi-campsite.com/wp-content/uploads/2025/09/domes-overlay-background.webp');
+}
+
+/* Gallery */
+#elementor-popup-modal-358 .overlay-menu:has(.menu-item-2598:hover) {
+  background-image: url('https://krabi-campsite.com/wp-content/uploads/2025/09/gallery-overlay-background.webp');
+}
+
+/* Guestbook */
+#elementor-popup-modal-358 .overlay-menu:has(.menu-item-2599:hover) {
+  background-image: url('https://krabi-campsite.com/wp-content/uploads/2025/09/guestbook-overlay-background.webp');
+}
+
+/* About */
+#elementor-popup-modal-358 .overlay-menu:has(.menu-item-2597:hover) {
+  background-image: url('https://krabi-campsite.com/wp-content/uploads/2025/09/about-overlay-background.webp');
+}
+
+/* Services */
+#elementor-popup-modal-358 .overlay-menu:has(.menu-item-2601:hover) {
+  background-image: url('https://krabi-campsite.com/wp-content/uploads/2025/09/services-overlay-background.webp');
+}
+
+@media (max-width: 799px) {
+    .overlay-menu .e-con-inner {
+        flex-wrap: wrap !important;
+    }
+}
+
+ @media (min-width: 800px) {
+     
+     #elementor-popup-modal-358 .dialog-close-button {
+        right: 2rem !important;
+    }
+    
+    .overlay-menu__logo-container {
+        padding: 1rem 0 1rem 2rem;
+    }
+     
+     .overlay-menu__contact-container {
+        width: 70%;
+        margin-top: 0;
+    }
+
+    .overlay-menu .button-container-booking {
+        padding: 2rem 0 0 0;
+        border-top: 1px solid var(--bg-color-opacity);
+    }
+    
+    #elementor-popup-modal-358 .overlay-menu__list .elementor-nav-menu > li > a.elementor-item {
+        font-size: 4rem;
+        line-height: 1.3;
+    }
+    
+    .overlay-menu__nav-container {
+        order: 1;
+        border-left: 1px solid var(--bg-color-opacity);
+        padding: 2.6rem 0 0 2rem;
+    }
+    
+    .overlay-menu__contact-container {
+       justify-content: center;
+        padding: 5rem 2rem;
+    }
+    
+    .button-container-contact {
+        align-items: center;
+    }
+    
+    .button-container-contact::after {
+        content: "";
+        flex-grow: 1;
+        height: 1px;
+        margin-top: 0.7rem;
+        background-color: var(--bg-color-opacity);
+        display: block
+    }
+ }
+ 
+ @media (min-width: 1080px) {
+     
+     .overlay-menu__contact-container {
+         width: 100%;
+    }
+ }
