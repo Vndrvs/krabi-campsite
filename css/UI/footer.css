@@ -1,0 +1,125 @@
+p {
+    margin: 0 !important;
+}
+
+.footer-content-container {
+    padding: 2em 3em 5em 3em;
+}
+
+.top-container {
+    padding: 0 0 1.5em 0;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.info-column-container {
+    padding: 0px;
+    height: fit-content;
+    width: fit-content;
+    align-items: flex-end;
+    column-gap: 10em;
+}
+
+.footer-logo-container {
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    min-width: 148px;
+    padding: 1em 1.5em;
+    border: 1px solid var(--bg-color);
+}
+
+.footer-logo {
+    width: 100px !important;
+    max-width: 100px !important;
+}
+
+.info-column-container {
+    width: fit-content;
+}
+
+
+.footer-text-container {
+    gap: 0.5em;
+}
+
+.footer-bottom-container {
+    border-top: 1px solid var(--bg-color);
+    border-bottom: 1px solid var(--bg-color);
+    padding: 0;
+    justify-content: space-between;
+}
+
+.language-switch-container li a {
+        display: flex;
+    align-items: center !important;
+}
+
+.language-switch-container li a span {
+    padding: 0px !important;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+}
+
+.cpel-switcher__lang {
+  display: inline-block;
+  min-width: 2em;
+  text-align: left;
+}
+
+.cpel-switcher__lang a {
+  transition: font-weight 0.4s ease !important;
+}
+
+.footer-menu {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+}
+
+.footer-menu a {
+    height: 1em;
+    padding: 0 !important;
+    margin-left: 5em !important;
+    transition: font-weight 0.2s ease !important;
+    text-transform: uppercase !important;
+}
+
+@media (max-width: 768px) {
+    
+    .footer-logo-container {
+        margin: 0 auto;
+    }
+    
+    .info-column-container {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .footer-bottom-container {
+        justify-content: center !important;
+    }
+    
+    .footer-menu {
+        width: 100%;
+        justify-content: center;
+        padding-top: 1.6em;
+        border-top: 1px solid var(--bg-color);
+    }
+    
+    .footer-menu ul {
+        flex-direction: column;
+        row-gap: 1em;
+    }
+    
+    .footer-menu a {
+        margin: 0 !important;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 800px) {
+    .footer-content-container {
+        padding: 2em 3em;
+    }
+}

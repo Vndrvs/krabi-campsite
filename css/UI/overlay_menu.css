@@ -156,32 +156,26 @@
     width: auto;
 }
 
-/* Home */
 #elementor-popup-modal-358 .overlay-menu:has(.menu-item-2596:hover) {
   background-image: url('https://krabi-campsite.com/wp-content/uploads/2025/09/home-overlay-background.webp');
 }
 
-/* Our Domes */
 #elementor-popup-modal-358 .overlay-menu:has(.menu-item-2600:hover) {
   background-image: url('https://krabi-campsite.com/wp-content/uploads/2025/09/domes-overlay-background.webp');
 }
 
-/* Gallery */
 #elementor-popup-modal-358 .overlay-menu:has(.menu-item-2598:hover) {
   background-image: url('https://krabi-campsite.com/wp-content/uploads/2025/09/gallery-overlay-background.webp');
 }
 
-/* Guestbook */
 #elementor-popup-modal-358 .overlay-menu:has(.menu-item-2599:hover) {
   background-image: url('https://krabi-campsite.com/wp-content/uploads/2025/09/guestbook-overlay-background.webp');
 }
 
-/* About */
 #elementor-popup-modal-358 .overlay-menu:has(.menu-item-2597:hover) {
   background-image: url('https://krabi-campsite.com/wp-content/uploads/2025/09/about-overlay-background.webp');
 }
 
-/* Services */
 #elementor-popup-modal-358 .overlay-menu:has(.menu-item-2601:hover) {
   background-image: url('https://krabi-campsite.com/wp-content/uploads/2025/09/services-overlay-background.webp');
 }
@@ -220,11 +214,11 @@
     .overlay-menu__nav-container {
         order: 1;
         border-left: 1px solid var(--bg-color-opacity);
-        padding: 2.6rem 0 0 2rem;
+        padding-left: 2rem;
     }
     
     .overlay-menu__contact-container {
-       justify-content: center;
+        justify-content: center;
         padding: 5rem 2rem;
     }
     
