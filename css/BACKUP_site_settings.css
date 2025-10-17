@@ -14,7 +14,7 @@ html {
   --bg-color: #F8F5F1;
   --bg-color-opacity: rgba(248, 245, 241, 0.7);
   --secondary-bg-color: #333333;
-  --sidebar-width: 100px;
+  --sidebar-width: 97px;
 }
 
 /* Utilities (mixin-ish) */
@@ -77,13 +77,25 @@ html {
     row-gap: 1rem !important;
 }
 
+u-ip-m {
+    padding-inline: 12px;
+}
+
+
 /* Utilities END-HERE */
 
 /* BEM styling START-HERE */
 
 .section__heading h2 {
-    line-height: 2.6rem !important;
-    font-size: 1.8rem !important;
+    line-height: 1.6rem !important;
+    font-size: 1.5rem !important;
+}
+
+@media (min-width: 800px) {
+    .section__heading h2 {
+        line-height: 2.6rem !important;
+        font-size: 1.8rem !important;
+    }
 }
 
 .section__heading {
@@ -127,9 +139,13 @@ html {
     font-family: 'Open Sans';
 }
 
+.section {
+    margin-top: 32px;
+}
+
 @media (min-width: 800px) {
     .section {
-        margin-top: 2rem;
+        margin-top: 64px;
     }
 }
 
@@ -149,6 +165,71 @@ html {
 
 
 /* Secion Stylings START-HERE */
+
+/* cookie bar */
+
+.cookie-banner {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    margin-bottom: 1rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.cookie-banner .e-con-inner {
+    gap: 1rem;
+}
+
+.cookie-banner__button-container {
+    justify-content: flex-end;
+    width: 100%;
+    outline: none !important;
+}
+
+.cookie-banner__text-container {
+    gap: 1rem;
+}
+
+.cookie-banner__button {
+    outline: none !important;
+    box-shadow: none !important;
+    white-space: nowrap;
+}
+
+.cookie-banner__button .elementor-button {
+    outline: none !important;
+    box-shadow: none !important;
+    width: 100%;
+    padding: 1rem 3rem;
+}
+
+.cookie-banner__title .elementor-heading-title {
+    line-height: 1 !important;
+    padding: 0;
+}
+
+@media (min-width: 800px) {
+    .cookie-banner {
+        padding: 1.4rem 2rem;
+        text-align: left;
+    }
+    
+    .cookie-banner__button-container {
+        align-content: center;
+        justify-content: center;
+        width: 10rem;
+    }
+    
+    .cookie-banner__text-container {
+        text-align: left;
+    }
+    
+    .cookie-banner .e-con-inner {
+        gap: 2rem;
+        flex-direction: row !important;
+    }
+}
 
 /* sidebar */
 
@@ -199,7 +280,7 @@ html {
         flex: 1 1 auto !important;
         min-width: 0 !important;
         box-sizing: border-box;
-         row-gap: 0;
+        row-gap: 0;
     }
     
     .content-with-sidebar__sidebar {
@@ -213,7 +294,7 @@ html {
     
     .sidebar__container {
         display: flex !important;
-        flex-wrap: nowrap !important;   
+        flex-wrap: nowrap !important;
         align-items: stretch;
         justify-content: flex-start;
         writing-mode: vertical-rl;
@@ -222,7 +303,7 @@ html {
     .content-with-sidebar__sidebar .menu-item-410 {
         background-color: var(--color-secondary);
         height: 50vh;
-         cursor: pointer;
+        cursor: pointer;
     }
     
     .menu-item-409,
@@ -295,6 +376,7 @@ html {
     height: 13rem;
     align-self: flex-start;
     overflow: hidden;
+    aspect-ratio: 12 / 9;
 }
 
 .plain-feature__image img {
@@ -302,6 +384,7 @@ html {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
 }
 
 .plain-feature__media--with-content {
@@ -779,6 +862,48 @@ html {
 
 /* Booking block */
 
+.booking-loop__carousel .swiper-slide .elementor-widget-theme-post-content figure {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    margin: 0;
+}
+
+.elementor-element-f7ed683 .swiper-slide .wp-block-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+.elementor-element-f7ed683 .swiper-slide .wp-block-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+@media (min-width: 767px) {
+    .booking-loop__carousel .swiper-slide .elementor-widget-theme-post-content figure {
+        aspect-ratio: 16 / 9;
+    }
+
+    .elementor-element-f7ed683 .swiper-slide .wp-block-image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    .elementor-element-f7ed683 .swiper-slide .wp-block-image img {
+        object-fit: cover;
+    }
+}
+
 .room-details {
     margin-top: 0 !important;
 }
@@ -791,6 +916,35 @@ html {
     height: fit-content;
 }
 
+.elementor form input[type="text"],
+.elementor form input[type="number"],
+.elementor form input[type="email"],
+.elementor form input[type="tel"],
+.elementor form input[type="date"],
+.elementor form select,
+.elementor form textarea {
+  height: 2.8rem !important;
+  line-height: 2.8rem !important;
+  padding: 0 0.75rem !important;
+  box-sizing: border-box !important;
+  min-height: unset !important;
+  max-height: 2.8rem !important;
+}
+
+.elementor-field-subgroup {
+    gap: 0.6rem;
+}
+
+.elementor-field-option label {
+    padding-left: 0.3rem;
+}
+
+.elementor-form .elementor-field-group input[type="checkbox"] {
+    width: 1rem;
+    height: 1rem;
+    display: inline-block;
+    vertical-align: middle;
+}
 
 @media (min-width: 767px) {
     
