@@ -77,8 +77,31 @@ html {
     row-gap: 1rem !important;
 }
 
-.u-ip-m {
+.u-p-reg {
     padding-inline: 12px;
+}
+
+.u-m-reg {
+    margin-top: 32px;
+}
+
+.u-m-large {
+    margin-top: 64px;
+}
+
+@media (min-width: 800px) {
+
+    .u-m-reg {
+        margin-top: 64px;
+    }
+
+    .u-w-reg {
+        max-width: 1400px;
+    }
+    
+    .u-m-large {
+        margin-top: 128px;
+    }
 }
 
 
@@ -599,6 +622,7 @@ html {
     row-gap: 0;
     text-align: center;
     align-items: center;
+    justify-content: center;
 }
 
 .double-feature__media-container--right {
