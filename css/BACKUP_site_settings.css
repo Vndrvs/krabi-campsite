@@ -165,6 +165,14 @@ html {
         padding-right: 12px;
         padding-left: 12px;
     }
+
+    .u-mmt-96 {
+        margin-top: 96px;
+    }
+
+    .u-mmt-48 {
+        margin-top: 48px;
+    }
 }
 
 /* desktop-only utilities */
@@ -178,6 +186,10 @@ html {
 
     .u-drg-48 {
         row-gap: 48px !important;
+    }
+
+    .u-dmt-160 {
+        margin-top: 160px;
     }
 
     .u-dmt-224 {
@@ -383,6 +395,10 @@ html {
 
 /* sidebar */
 
+.content-with-sidebar__content {
+    row-gap: 0;
+}
+
 .content-with-sidebar__sidebar .menu-item-410 {
     background-color: var(--color-secondary);
     cursor: pointer;
@@ -430,7 +446,6 @@ html {
         flex: 1 1 auto !important;
         min-width: 0 !important;
         box-sizing: border-box;
-        row-gap: 0;
     }
     
     .content-with-sidebar__sidebar {
@@ -472,6 +487,45 @@ html {
         max-height: 50vh !important;
     }
 }
+
+/* Highlight-quote */
+
+.highlight-quote {
+    align-self: center;
+    width: 70%;
+    max-width: 68rem;
+}
+
+.highlight-quote__body {
+    text-align: center;
+    margin-right: auto !important;
+    margin-left: auto  !important;
+}
+
+@media (min-width: 800px) {
+    
+    .highlight-quote__body p {
+        text-indent: 8rem;
+        text-align: left;
+    }
+}
+
+@media (min-width: 1180px) {
+    
+    .highlight-quote {
+        width: 100vw;
+        margin: 0 auto;
+    }
+    
+    .highlight-quote__body p {
+        text-indent: 10rem;
+        font-size: 1.25rem;
+        line-height: 1.5em;
+        padding: 2em 4em;
+        max-width: 1300px;
+    }
+}
+
 
 /* Split-feature */
 
