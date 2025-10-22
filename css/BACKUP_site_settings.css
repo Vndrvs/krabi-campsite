@@ -77,9 +77,8 @@ html {
     row-gap: 1rem !important;
 }
 
-.u-ps-reg {
-    padding-right: 12px;
-    padding-left: 12px;
+.u-rg-48 {
+    row-gap: 48px;
 }
 
 .u-mt-xs {
@@ -146,9 +145,16 @@ html {
     letter-spacing: 0.15em !important;
 }
 
+/* mobile-only utilities */
+
 @media (max-width: 800px) {
+    
     .u-mrg-32 {
         row-gap: 32px;
+    }
+
+    .u-mrg-48 {
+        row-gap: 48px;
     }
 
     .u-mrg-64 {
@@ -161,9 +167,28 @@ html {
     }
 }
 
+/* desktop-only utilities */
+
 @media (min-width: 800px) {
 
-    .u-ps-reg {
+    .u-dp-48 {
+        padding-right: 48px !important;
+        padding-left: 48px !important;
+    }
+
+    .u-drg-48 {
+        row-gap: 48px !important;
+    }
+
+    .u-dmt-224 {
+        margin-top: 224px;
+    }
+}
+
+
+@media (min-width: 800px) {
+
+    .u-dp-48 {
         padding-right: 48px !important;
         padding-left: 48px !important;
     }
