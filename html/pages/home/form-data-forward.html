@@ -1,0 +1,38 @@
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const arrival = document.getElementById('form-field-arrival_date');
+  const departure = document.getElementById('form-field-departure_date');
+  const guests = document.getElementById('form-field-guests_number');
+  const submitBtn = document.querySelector('.elementor-button[type="submit"]');
+
+  function saveFormData() {
+    const data = {
+      arrivaldate: arrival?.value || '',
+      departuredate: departure?.value || '',
+      guestsnumber: guests?.value || '',
+    };
+    sessionStorage.setItem('formData', JSON.stringify(data));
+  }
+
+  setTimeout(() => {
+    saveFormData();
+  }, 2000);
+
+  const saved = sessionStorage.getItem('formData');
+  if (saved) {
+    const data = JSON.parse(saved);
+    if (arrival) arrival.value = data.arrivaldate || arrival.value;
+    if (departure) departure.value = data.departuredate || departure.value;
+    if (guests) guests.value = data.guestsnumber || guests.value;
+  }
+
+  [arrival, departure, guests].forEach(field => {
+    if (field) field.addEventListener('input', saveFormData);
+  });
+
+  if (submitBtn) {
+    submitBtn.addEventListener('click', saveFormData);
+  }
+});
+
+</script>
