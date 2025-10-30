@@ -1,17 +1,204 @@
-/* utility classes */
+/* Utilities START-HERE */
 
 .u-no-padding {
     padding: 0 !important;
 }
 
 .u-side-padded {
-    padding: 0 1.4rem;
+    padding: 0 1.4rem !important;
 }
 
 .u-p-1 {
-    padding: 1rem;
+    padding: 1rem !important;
 }
 
 .u-rg-1 {
-    row-gap: 1 rem;
+    row-gap: 1rem !important;
 }
+
+.u-rg-48 {
+    row-gap: 48px !important;
+}
+
+.u-mt-xs {
+    margin-top: 16px !important;
+}
+
+.u-mt-small {
+    margin-top: 32px !important;
+}
+
+.u-mt-medium {
+    margin-top: 64px !important;
+}
+
+.u-mt-large {
+    margin-top: 96px !important;
+}
+
+.u-mt-xs {
+    margin-bottom: 16px !important;
+}
+
+.u-mb-small {
+    margin-bottom: 32px !important;
+}
+
+.u-mb-medium {
+    margin-bottom: 64px !important;
+}
+
+.u-mb-large {
+    margin-bottom: 96px !important;
+}
+
+.u-lh-1 * {
+    line-height: 1 !important;
+}
+
+.u-lh-s * {
+    line-height: 1.2 !important;
+}
+
+.u-lh-m * {
+    line-height: 1.3 !important;
+}
+
+.u-lh-l * {
+    line-height: 1.5 !important;
+}
+
+.u-ls-8 * {
+    letter-spacing: 0.08em !important;
+}
+
+.u-ls-10 * {
+    letter-spacing: 0.1em !important;
+}
+
+.u-ls-12 * {
+    letter-spacing: 0.12em !important;
+}
+
+.u-ls-15 * {
+    letter-spacing: 0.15em !important;
+}
+
+/* mobile-only utilities */
+
+@media (max-width: 800px) {
+    
+    .u-mrg-32 {
+        row-gap: 32px;
+    }
+
+    .u-mrg-48 {
+        row-gap: 48px;
+    }
+
+    .u-mrg-64 {
+        row-gap: 64px;
+    }
+
+    .u-mp-12 {
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+
+    .u-mmt-96 {
+        margin-top: 96px;
+    }
+
+    .u-mmt-48 {
+        margin-top: 48px;
+    }
+}
+
+/* desktop-only utilities */
+
+@media (min-width: 800px) {
+
+    .u-dp-48 {
+        padding-right: 48px !important;
+        padding-left: 48px !important;
+    }
+
+    .u-drg-48 {
+        row-gap: 48px !important;
+    }
+    
+    .u-dmt-64 {
+        margin-top: 64px;
+    }
+        
+    .u-dmt-96 {
+        margin-top: 96px;
+    }
+    
+    .u-dmt-128 {
+        margin-top: 128px;
+    }
+
+    .u-dmt-160 {
+        margin-top: 160px;
+    }
+
+    .u-dmt-224 {
+        margin-top: 224px;
+    }
+
+    .u-dmb-128 {
+        margin-bottom: 128px;
+    }
+
+    .u-dmb-160 {
+        margin-bottom: 160px;
+    }
+}
+
+
+@media (min-width: 800px) {
+
+    .u-dp-48 {
+        padding-right: 48px !important;
+        padding-left: 48px !important;
+    }
+    
+     .u-mw-reg {
+        max-width: 1400px !important;
+    }
+    
+    .u-mt-xs {
+        margin-top: 32px;
+    }
+
+    .u-mt-small {
+        margin-top: 64px !important;
+    }
+
+    .u-mt-medium {
+        margin-top: 96px !important;
+    }
+        
+    .u-mt-large {
+        margin-top: 128px !important;
+    }
+    
+    .u-mb-xs {
+        margin-top: 16px;
+    }
+    
+    .u-mb-small {
+        margin-bottom: 64px !important;
+    }
+    
+    .u-mb-medium {
+        margin-bottom: 96px !important;
+    }
+    
+    .u-mb-large {
+        margin-bottom: 160px !important;
+    }
+}
+
+/* Utilities END-HERE */

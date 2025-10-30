@@ -1,8 +1,9 @@
+/* Our Domes */
+
 .benefit-feature {
     align-self: center;
     flex-direction: column;
     gap: 2.5rem;
-    padding: 4rem 12px 4rem 12px;
     max-width: 900px;
 }
 
@@ -20,6 +21,10 @@
 
 .benefit-feature__list svg {
     filter: invert(54%) sepia(53%) saturate(468%) hue-rotate(87deg) brightness(87%) contrast(91%);
+}
+
+.split-feature--domes {
+    gap: 48px;
 }
 
 /* five collage HTML */
@@ -82,21 +87,12 @@
 @media (min-width: 800px) {
 
     .five-collage {
-        position: relative;
         width: 70vw;
         max-height: 80vh;
         aspect-ratio: 4 / 3;
         margin: 0 auto;
         overflow: visible;
     }
-    
-    .five-collage img {
-        position: absolute;
-        display: block;
-        height: auto;
-        object-fit: cover;
-    }
-    
     
     .five-collage .center {
         width: 36vw !important;
@@ -105,7 +101,6 @@
         left: 27%;
         z-index: 2;
     }
-    
     
     .five-collage .top-left {
         width: 20vw !important;
@@ -141,10 +136,6 @@
 
 /* primary collage */
 
-.primary-collage {
-    padding: 4rem 0 4rem 0 !important;
-}
-
 .primary-collage__content-container {
     padding-inline: 12px;
 }
@@ -165,11 +156,10 @@
 
 .primary-collage__grid {
     position: relative;
-    padding-inline: 24px;
     width: 100%;
     max-height: 80vh;
     aspect-ratio: 4 / 3;
-    height: 40vh;
+    height: clamp(40vh, 50vw, 60vh);
 }
 
 .primary-collage__grid img {
@@ -212,6 +202,7 @@
         width: 76vw;
         margin: 0 auto;
         max-width: 1400px;
+        height: 360px;
     }
     
     .primary-collage__grid .center {
@@ -242,16 +233,7 @@
 }
 
 
-
 /* secondary collage */
-
-.secondary-collage {
-    padding: 0 0 4rem 0 !important;
-}
-
-.secondary-collage__content-container {
-    padding-inline: 12px
-}
 
 .secondary-collage__button {
     align-self: flex-start;
