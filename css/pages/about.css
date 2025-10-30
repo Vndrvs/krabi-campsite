@@ -104,7 +104,7 @@
 
 .centered-feature {
     gap: 0;
-    padding: 0;
+    align-self: center;
 }
 
 .centered-feature__title {
@@ -184,6 +184,10 @@
     }
 }
 
+.three-column-feature {
+    align-self: center;
+}
+
 .three-column-feature__image--col1 img, .three-column-feature__image--col2 img, .three-column-feature__image--col3 img {
     width: 100%;
     height: 100%;
@@ -191,20 +195,78 @@
     object-position: center;
 }
 
-.three-column-feature__image--col1, .three-column-feature__image--col2, .three-column-feature__image--col3 {
-    aspect-ratio: 3/4;
+.three-column-feature__image--col1 {
+    aspect-ratio: 3/3.2;
     height: auto;
     width: auto;
+}
+
+.three-column-feature__image--col2 {
+    aspect-ratio: 3/2.8;
+    height: auto;
+    width: auto;
+}
+
+.three-column-feature__image--col3 {
+    aspect-ratio: 3/3.2;
+    height: auto;
+    width: auto;
+}
+
+.three-column-feature__content-block {
+    max-width: 70%;
+    align-self: center;
+    align-items: end;
+}
+
+.three-column-feature__column--first {
+    justify-content: end;
+}
+
+
+.three-column-feature__column--first img {
+    padding-left: 10%;
+}
+
+.three-column-feature__column--second img {
+    padding: 4%;
+}
+
+.three-column-feature__column--third {
+    justify-content: center;
+}
+
+.three-column-feature__column--third img {
+    padding-right: 16%;
 }
 
 @media (min-width: 800px) {
     
    .three-column-feature {
-        gap: 62px;
+        gap: 48px;
+    }
+    
+    .three-column-feature__column--second {
+        gap: 2rem;
+    }
+    
+    .three-column-feature__content-block {
+        max-width: 80%;
+        align-self: end;
     }
 }
 
 @media (min-width: 1080px) {
+    
+    .three-column-feature {
+        gap: 64px;
+        
+    }
+    
+    .three-column-feature__column--second {
+        gap: 4rem;
+    }
+    
     .three-column-feature {
     }
     
@@ -226,11 +288,6 @@
     
     .three-column-feature__content-container {
     
-    }
-    
-    .three-column-feature__content-block {
-        max-width: 70%;
-        align-self: flex-end;
     }
     
     .three-column-feature__title h2{
