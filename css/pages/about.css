@@ -1,8 +1,6 @@
-.content-with-sidebar__content {
-    gap: 0;
-}
+/* about page */
 
-/* Duo-feature */
+/* duo-feature */
 
  .about-duo {
     gap: 48px;
@@ -102,6 +100,8 @@
     }
 }
 
+/* centered-feature */
+
 .centered-feature {
     gap: 0;
     align-self: center;
@@ -163,6 +163,12 @@
     max-width: 600px;
 }
 
+@media (max-width: 660px) {
+    .centered-feature__title--thai {
+        font-size: 22px;
+    }
+}
+
 @media (min-width: 800px) {
     
     .centered-feature__html-grid {
@@ -183,6 +189,8 @@
 
     }
 }
+
+/* three-column feature */
 
 .three-column-feature {
     align-self: center;
@@ -265,34 +273,5 @@
     
     .three-column-feature__column--second {
         gap: 4rem;
-    }
-    
-    .three-column-feature {
-    }
-    
-    .three-column-feature__column--first {
-    
-    }
-    
-    .three-column-feature__image--col1 {
-    
-    }
-    
-    .three-column-feature__column--second {
-    
-    }
-    
-    .three-column-feature__image--col2 {
-    
-    }
-    
-    .three-column-feature__content-container {
-    
-    }
-    
-    .three-column-feature__title h2{
-    }
-    
-    .three-column-feature__body {
     }
 }

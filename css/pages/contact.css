@@ -1,48 +1,41 @@
-.contact-us-form {
-    
+/* Contact us */
+
+.contact-us {
+    align-items: center;
 }
 
 .contact-us__content-container {
-
-}
-
-.contact-us__title {
-
-}
-
-.contact-us__body {
-
-}
-
-.contact-us__form-container {
-
-}
-s
-.contact-us__form {
-
-}
-
-.elementor-field-type-submit .elementor-button {
-    width: 100%;
-}
-
-.contact-us__content-container {
+    padding: 1rem;
     margin: 0 auto;
-        width: 80%;
-        row-gap: 1.5rem;
-    }
+    width: 80%;
+    row-gap: 1.5rem;
+    height: 80%;
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(5px);
+    background: radial-gradient(circle at 20% 30%, rgba(255,255,255,0.05) 0%, transparent 80%),
+              radial-gradient(circle at 80% 70%, rgba(0,0,0,0.35) 0%, transparent 80%);
+}
 
-.elementor-field-type-submit .elementor-button {
+.contact-us .elementor-field-type-submit .elementor-button {
     width: 100%;
 }
+
+.contact-us .elementor-field {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
 
 @media (min-width: 1180px) {
     .contact-us__content-container {
         text-align: left;
-        margin: 0;
-        padding-inline:
-        10%;
-        width: 60%;
+        margin: 3rem;
+        padding:
+        3% 4%;
+        width: 50%;
         row-gap: 3rem;
     }
 }
