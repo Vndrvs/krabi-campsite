@@ -1817,47 +1817,7 @@ input[type="number"]::-webkit-outer-spin-button {
     }
 }
 
-/* Contact us */
 
-.contact-us {
-    align-items: center;
-}
-
-.contact-us__content-container {
-    padding: 1rem;
-    margin: 0 auto;
-    width: 80%;
-    row-gap: 1.5rem;
-    height: 80%;
-    background: rgba(0, 0, 0, 0.35);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  
-    backdrop-filter: blur(7px);
-    -webkit-backdrop-filter: blur(5px);
-    background: radial-gradient(circle at 20% 30%, rgba(255,255,255,0.05) 0%, transparent 80%),
-              radial-gradient(circle at 80% 70%, rgba(0,0,0,0.35) 0%, transparent 80%);
-}
-
-.contact-us .elementor-field-type-submit .elementor-button {
-    width: 100%;
-}
-
-.contact-us .elementor-field {
-    background-color: rgba(255, 255, 255, 0.1) !important;
-}
-
-
-@media (min-width: 1180px) {
-    .contact-us__content-container {
-        text-align: left;
-        margin: 3rem;
-        padding:
-        3% 4%;
-        width: 50%;
-        row-gap: 3rem;
-    }
-}
 
 /* Guestbook */
 
@@ -2277,12 +2237,62 @@ input[type="number"]::-webkit-outer-spin-button {
     }
 }
 
+/* Contact us */
+
+.contact-us__content-container {
+    padding: 4rem 2rem;
+    width: 100%;
+    row-gap: 1.5rem;
+    background-color: var(--primary-color) !important;
+}
+
+.contact-us .elementor-field-type-submit .elementor-button {
+    width: 100%;
+}
+
+.contact-us .elementor-field {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.contact-us__media {
+    display: none;
+}
+
+@media (min-width: 800px) {
+    
+    .contact-us__media {
+        display: flex;
+        width: 50%;
+        overflow: hidden;
+    }
+    
+    .contact-us__media img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        transition: transform 0.6s ease;
+    }
+    
+    .contact-us__form {
+        padding-top: 4%;
+    }
+    
+    .contact-us__content-container {
+        align-items: start;
+        padding-inline: 6%;
+        width: 50%;
+        height: 100vh;
+        text-align: left;
+    }
+}
+
 /* document pages */
 .document-section {
     margin-top: 32px;
     margin-bottom: 32px;
 }
-
 
 @media (min-width: 800px) {
     .document-section {

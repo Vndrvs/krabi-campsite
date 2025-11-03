@@ -1,0 +1,27 @@
+ <style>
+.homepage-hero__form .elementor-date-field {
+   -webkit-appearance: none;
+}
+.homepage-hero__form .elementor-date-field:before {
+   content: attr(placeholder);
+}
+.homepage-hero__form .elementor-date-field.date-selected:before {
+   content: "" !important;
+}
+.homepage-hero__form input::-webkit-date-and-time-value {
+   text-align: left !important;
+   width: 100% !important;
+   display: block !important;
+   position: absolute;
+}
+</style>
+
+<script>
+  jQuery(document).on('change', '.homepage-hero__form .elementor-date-field', function () {
+    if (jQuery(this).val() !== '') {
+      jQuery(this).addClass('date-selected');
+    } else {
+      jQuery(this).removeClass('date-selected');
+    }
+  });
+</script>

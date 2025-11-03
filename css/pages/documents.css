@@ -1,0 +1,29 @@
+/* document pages */
+.document-section {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+
+@media (min-width: 800px) {
+    .document-section {
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }
+}
+
+.document-section__content-container {
+    gap: 0rem;
+}
+
+.document-section__content-container h2 {
+    padding: 2rem 0 1rem 0;
+}
+
+.document-section__title h2 {
+    text-transform: uppercase !important;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
