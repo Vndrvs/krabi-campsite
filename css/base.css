@@ -1,0 +1,19 @@
+html {
+    font-size: 16px !important;
+}
+
+.mobile-section-heading h2 {
+    font-size: 1rem;
+}
+
+:root {
+    font-size: 16px !important;
+  --primary-color: #3C9F5D;
+  --secondary-color: #BAA367;
+  --txt-color: #305050;
+  --accent-color: #C87D5F;
+  --bg-color: #F8F5F1;
+  --bg-color-opacity: rgba(248, 245, 241, 0.7);
+  --secondary-bg-color: #333333;
+  --sidebar-width: 97px;
+}

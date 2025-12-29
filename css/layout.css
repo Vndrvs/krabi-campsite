@@ -1,21 +1,47 @@
-/* sections */
-
-.section {
-    margin-top: 2rem;
+.content-with-sidebar__content {
+    row-gap: 0;
 }
 
-/* page layout with sidebar - SETUP */
+.content-with-sidebar__sidebar .menu-item-410, .content-with-sidebar__sidebar .menu-item-5798, .content-with-sidebar__sidebar .menu-item-6247 {
+    background-color: var(--color-secondary);
+    cursor: pointer;
+}
+    .content-with-sidebar__sidebar .menu-item-1930, .content-with-sidebar__sidebar .menu-item-5797, .content-with-sidebar__sidebar .menu-item-6248 {
+    background-color: var(--color-primary);
+    cursor: pointer;
+}
 
 @media (max-width: 799px) {
-    .content-with-sidebar__sidebar {
-        display: none;
+  .content-with-sidebar__sidebar {
+      position: fixed !important;
+      bottom: 0;
+      left: 0;
+      width: 100vw !important;
+      height: auto !important;
+      z-index: 100;
+      display: flex;
+      justify-content: center;
+    }
+    
+    .content-with-sidebar__sidebar .menu-item-5797 {
+        justify-content: center;
+    }
+  
+   .sidebar__container .menu-item {
+       height: 3.4rem;
+       width: 50%;
+    }
+    
+    .content-with-sidebar__sidebar .sidebar__container 
+    .sidebar-menu 
+    .elementor-nav-menu--main 
+    .elementor-nav-menu > li > a.elementor-item {
+        font-size: 18px;
     }
 }
 
 @media (min-width: 800px) {
     
-    /* Sidebar and Content */
- 
     .content-with-sidebar {
         display: flex !important;
         width: 100% !important;
@@ -27,7 +53,6 @@
         flex: 1 1 auto !important;
         min-width: 0 !important;
         box-sizing: border-box;
-        row-gap: 0;
     }
     
     .content-with-sidebar__sidebar {
@@ -41,30 +66,25 @@
     
     .sidebar__container {
         display: flex !important;
-        flex-wrap: nowrap !important;   
+        flex-wrap: nowrap !important;
         align-items: stretch;
         justify-content: flex-start;
-        writing-mode: vertical-rl;
+        writing-mode: sideways-lr;
     }
 
-    .content-with-sidebar__sidebar .menu-item-410 {
+    .content-with-sidebar__sidebar .menu-item-410, .content-with-sidebar__sidebar .menu-item-5798, .content-with-sidebar__sidebar .menu-item-6247  {
         background-color: var(--color-secondary);
         height: 50vh;
-    }
-    
-    .menu-item-409,
-    .element-is-sticky .menu-item-410 {
-        max-height: 50vh !important;
+        cursor: pointer;
     }
 
-    .content-with-sidebar__sidebar .menu-item-1930 {
+    .content-with-sidebar__sidebar .menu-item-1930, .content-with-sidebar__sidebar .menu-item-5797, .content-with-sidebar__sidebar .menu-item-6248 {
         background-color: var(--color-primary);
         height: 50vh;
         cursor: pointer;
     }
 
-    .menu-item-1930,
-    .element-is-sticky .menu-item-1930 {
+    .menu-item-1930, .menu-item-5798, .element-is-sticky .menu-item-1930, .element-is-sticky .menu-item-5798, .element-is-sticky .menu-item-410 {
         max-height: 50vh !important;
     }
 }

@@ -1,3 +1,17 @@
+/* Elementor CSS overrides START-HERE */
+
+.entry-title {
+    display: none !important;
+}
+
+.e-con-inner {
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: none !important;
+}
+
+/* Elementor CSS overrides END-HERE */
+
 html {
     font-size: 16px !important;
 }
@@ -18,7 +32,7 @@ html {
   --sidebar-width: 97px;
 }
 
-/* Utilities (mixin-ish) */
+/* Utilities (mixin-ish) START HERE */
 
 .footer-heading {
     font-family: "Poppins" !important;
@@ -33,22 +47,6 @@ html {
     font-weight: 400;
     line-height: 1em;
 }
-
-/* Elementor CSS overrides START-HERE */
-
-.entry-title {
-    display: none !important;
-}
-
-.e-con-inner {
-    padding: 0 !important;
-    margin: 0 !important;
-    max-width: none !important;
-}
-
-/* Elementor CSS overrides END-HERE */
-
-/* Utilities START-HERE */
 
 .u-no-padding {
     padding: 0 !important;
@@ -251,7 +249,6 @@ html {
     }
 }
 
-
 /* Utilities END-HERE */
 
 /* BEM styling START-HERE */
@@ -337,7 +334,6 @@ html {
 }
 
 /* BEM styling END-HERE */
-
 
 /* Secion Stylings START-HERE */
 
@@ -764,7 +760,6 @@ input[type="number"]::-webkit-outer-spin-button {
         overflow: hidden;
     }
 }
-
 
 @media (min-width: 800px) {
     

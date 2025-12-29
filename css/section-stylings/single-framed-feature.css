@@ -1,0 +1,108 @@
+.single-framed-feature {
+    margin-top: 22rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.single-framed-feature__media-container {
+    display: flex;
+    width: 100%;
+}
+
+.single-framed-feature__image--background img {
+    width: 100vw !important;
+}
+
+.single-framed-feature__lvl1-frame {
+    position: absolute;
+    top: -15rem;
+    left: 50%;
+    transform: translate(-50%);
+    width: fit-content;
+    flex-direction: column;
+    text-align: center;
+    align-items: center !important;
+    padding: 0.8rem 0.6rem 1.4rem 0.6rem;
+    row-gap: 1.4rem;
+}
+
+.single-framed-feature__lvl2-frame {
+   width: 60vw;
+   max-width: 20rem;
+    aspect-ratio: 4 / 5;
+    padding: 0.6rem 0.6rem 1.8rem 0.6rem;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.single-framed-feature__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.single-framed-feature__image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.single-framed-feature__content-block {
+    padding: 1.4rem 1.4rem;
+    justify-content: center;
+}
+
+
+@media (min-width: 800px) {
+    
+    .single-framed-feature {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    
+    .single-framed-feature__image--background img {
+        height: 100%;
+    }
+
+    .single-framed-feature__lvl1-frame {
+        position: absolute;
+        left: 70%;
+        transform: translateY(30%);
+        width: fit-content;
+        top: -23rem;
+        text-align: left;
+        padding: 2rem 7rem 2rem 1.3rem;
+    }
+    
+    .single-framed-feature__lvl2-frame {
+        width: clamp(14rem, 24vw, 25vw);
+        max-width: none;
+        row-gap: 2rem;
+    }
+
+    .single-framed-feature__content-block {
+        width: 90%;
+        padding-left: 4rem;
+        justify-content: flex-end;
+    }
+    
+    .single-framed-feature__body p {
+        
+        max-width: 450px;
+    }
+}
+
+@media (min-width: 1180px) {
+    
+    .single-framed-feature__lvl1-frame {
+        row-gap: 3vw;
+    }
+    
+    .single-framed-feature__content-block {
+        max-width: 60%;
+        padding-bottom: 10%;
+    }
+}
