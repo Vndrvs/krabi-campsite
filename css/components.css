@@ -30,3 +30,18 @@
 .content-block {
     max-width: 80%;
 }
+
+.footer-heading {
+    font-family: "Poppins" !important;
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    line-height: 1em !important;
+}
+
+.footer-text {
+    font-family: "Poppins";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1em;
+}
+
