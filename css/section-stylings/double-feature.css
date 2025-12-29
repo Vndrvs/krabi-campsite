@@ -1,0 +1,117 @@
+.double-feature {
+    row-gap: 0;
+}
+
+.double-feature__content-container {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 0;
+    padding: 2rem 1rem 1rem 1rem;
+    width: 13rem;
+    height: 12rem;
+    row-gap: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.double-feature__media-container--right {
+    gap: 2rem;
+    padding: 4rem 1.4rem 2rem 1.4rem;
+}
+
+.double-feature__media-container--left {
+    gap: 2rem;
+    padding: 1rem 1.4rem 2rem 1.4rem;
+    align-items: center;
+    order: 1;
+}
+
+.double-feature__media-container--left .elementor-widget-image, .double-feature__media-container--right .elementor-widget-image {
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
+}
+
+.double-feature__media-container--right .elementor-widget-image img, .double-feature__media-container--left .elementor-widget-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (max-width: 799px) {
+    .double-feature {
+        flex-wrap: wrap !important;
+    }
+    
+    .double-feature__button--desktop, .double-feature__body--desktop {
+        display: none;
+    }
+    .double-feature__content-container--thai {
+        gap: 1rem;
+    }
+}
+
+@media (min-width: 800px) {
+    
+    .double-feature {
+        height: 90vh;
+        gap: 0;
+    }
+    
+    .double-feature__content-container {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        top: -60px;
+        width: 36%;
+        height: 44%;
+        width: auto;
+        max-width: 22rem;
+        max-height: 22rem;
+        row-gap: 1rem;
+        justify-content: center;
+        text-align: center;
+        padding: 5% 2%;
+    }
+    
+    .double-feature__content-container--thai {
+        height: 120%;
+        max-height: 25rem;
+    }
+    
+    .double-feature__media-container--right {
+        padding: 0 13vw 10vh 0;
+        height: fit-content;
+    }
+    
+    .double-feature__media-container--right .elementor-widget-image {
+        height: 80vh;
+    }
+
+    .double-feature__media-container--left {
+        order: 0;
+        padding: 0 0 22vh 13vw;
+    }
+    
+    .double-feature__media-container--left .elementor-widget-image {
+        height: 68vh;
+    }
+    
+    .double-feature__button--desktop {
+        margin-top: 1.5rem;
+    }
+    
+    .double-feature__button--thai {
+        margin-top: 0.5rem !important;
+    }
+    
+    .double-feature__button--mobile {
+        display: none;
+    }
+    .double-feature__body--mobile {
+        display: none;
+    }
+}

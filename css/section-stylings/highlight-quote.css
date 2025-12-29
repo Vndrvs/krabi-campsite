@@ -1,0 +1,39 @@
+.highlight-quote {
+    align-self: center;
+    width: 70%;
+    max-width: 68rem;
+}
+
+.highlight-quote__body {
+    text-align: center;
+    margin-right: auto !important;
+    margin-left: auto  !important;
+}
+
+.highlight-quote__body--thai p {
+    font-family: 'kanit';
+}
+
+@media (min-width: 800px) {
+    
+    .highlight-quote__body p {
+        text-indent: 8rem;
+        text-align: left;
+    }
+}
+
+@media (min-width: 1180px) {
+    
+    .highlight-quote {
+        width: 100vw;
+        margin: 0 auto;
+    }
+    
+    .highlight-quote__body p {
+        text-indent: 10rem;
+        font-size: 1.25rem;
+        line-height: 1.5em;
+        padding: 2em 4em;
+        max-width: 1300px;
+    }
+}

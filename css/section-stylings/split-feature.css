@@ -1,7 +1,3 @@
-/* services */
-
-/* split-feature */
-
 .split-feature-wrapper {
   display: flex;
   flex-direction: column;
@@ -91,6 +87,10 @@
     .split-feature__content-container {
         align-self: center;
     }
+}
+
+.split-feature--domes {
+    gap: 48px;
 }
 
 /* mirrored versions */

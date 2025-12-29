@@ -1,9 +1,7 @@
-/* document pages */
 .document-section {
     margin-top: 32px;
     margin-bottom: 32px;
 }
-
 
 @media (min-width: 800px) {
     .document-section {

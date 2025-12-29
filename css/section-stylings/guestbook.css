@@ -1,5 +1,3 @@
-/* Guestbook */
-
 .guestbook__header-container {
     flex-direction: column;
     margin: 0 auto;
@@ -89,7 +87,6 @@
     z-index: 0;
 }
 
-
 #sp-testimonial-free-3306 .sp-testimonial-item::before {
     width: calc(100% - 3rem);
     height: calc(100% - 3rem);
@@ -136,4 +133,8 @@
     .guestbook__frame--primary {
         transform: translate(+2rem, +2rem);
     }
+}
+
+.guestbook__plugin-form--thai, .guestbook__plugin-form--thai #testimonial_form #submit, .guestbook__plugin-form--thai .sp-testimonial-label-section, .guestbook__plugin-form--thai .sp-testimonial-input-field input {
+    font-family: 'Kanit' !important;
 }
